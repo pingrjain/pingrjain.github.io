@@ -1,0 +1,97 @@
+﻿body {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial;
+    font-size: 12px;
+}
+
+#mainDiv > h2 {
+    text-align: center;
+}
+
+#busy {
+    font-weight: bold;
+    font-style: italic;
+    color: green;
+    margin-left: 10px;
+}
+
+.search {
+    width: 600px;
+    padding: 30px 30px 10px 30px;
+    border: 1px solid gray;
+}
+
+.hidden {
+    display: none
+}
+
+.results {
+    width: 600px;
+    padding: 10px 30px 10px 30px;
+    border: 1px solid gray;
+}
+
+#streamContainer {
+    width: 600px;
+    border-radius: 5px;
+}
+
+.error {
+    width: 600px;
+    padding: 10px 30px 30px 30px;
+}
+
+#errorMessage {
+    color: red;
+}
+
+.streamResult {
+    display: flex;
+    border-bottom: 1px solid #F1F1F1;
+    margin-bottom:5px;
+}
+
+#streamContainer:last-child {
+    border-bottom: 0;
+}
+
+.navigation {
+    cursor: pointer;
+    color: blue;
+}
+
+div.streamResult img {
+    width: 160px;
+    height: 90px;
+    margin-right: 10px;
+}
+
+.disabled {
+    cursor: not-allowed;
+    color: gray;
+}
+
+.streamResult div {
+    display: inline;
+}
+
+.gameTitle {
+    font-size: large;
+    font-weight: bold;
+    display: block;
+}
+
+.navigation {
+    font-weight: bold;
+    font-size: large;
+}
+
+.resultNav:after {
+    content: '';
+    display: block;
+    clear: both;
+    margin-bottom: 20px;
+}

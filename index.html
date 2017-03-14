@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>TWITCH.TV SEARCH STREAM</title>
+    <link href="styles.css" rel="stylesheet" />
+    <script src="script.js"></script>
+</head>
+<body>
+    <div id="mainDiv">
+        <h2>TWITCH.TV SEARCH STREAM</h2>
+        <div class="search">
+            <form id="formSearch" action="/">
+                <input id="txtSearch" type="search" placeholder="Search query..." value="love" required />
+                <button>Search</button>
+                <span id="busy" class="hidden">Please wait...</span>
+            </form>
+        </div>
+        <div class="error hidden">
+            <span id="errorMessage" />
+        </div>
+        <div class="results hidden">
+            <div class="resultNav">
+                <div style="float:left">
+                    Total results: <span id="spanTotalResults"></span>
+                </div>
+                <div style="float:right">
+                    <span id="navPrev" class="navigation" title="previous results">&DoubleLeftArrow;</span>
+                    <span id="spanCurrentPage">x/Y</span>
+                    <span id="navNext" class="navigation" title="next results">&DoubleRightArrow;</span>
+                </div>
+            </div>
+            <div id="streamContainer" />
+        </div>
+    </div>
+</body>
+</html>
