@@ -72,7 +72,7 @@ class SearchController {
 
     //get url for fresh search
     getTwitchSearchUrl(searchQuery) {
-        return this.appendStaticParams(`https://api.twitch.tv/kraken/search/streams?q=${searchQuery}&limit=${this.pageSize}`);
+        return this.appendStaticParams(`https://api.twitch.tv/kraken/search/streams?q=${encodeURI(searchQuery)}&limit=${this.pageSize}`);
     }
 
     //append client_id and callback params

@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link href='favicon.ico' rel='shortcut icon' type='image/x-icon'>
+    <meta charset="utf-8" />
+    <title>TWITCH.TV SEARCH STREAM</title>
+    <link href="styles.css" rel="stylesheet" />
+    <script src="scriptes5.js"></script>
+</head>
+<body>
+    <div id="mainDiv">
+        <h2>TWITCH.TV SEARCH STREAM</h2>
+        <div class="search">
+            <form id="formSearch" action="indexes5.html">
+                <input id="txtSearch" type="search" placeholder="Search query..." required />
+                <button>Search</button>
+                <span id="busy" class="hidden">Please wait...</span>
+            </form>
+        </div>
+        <div class="error hidden">
+            <span id="errorMessage" />
+        </div>
+        <div class="results hidden">
+            <div class="resultNav">
+                <div style="float:left">
+                    Total results: <span id="spanTotalResults"></span>
+                </div>
+                <div style="float:right">
+                    <span id="navPrev" class="navigation" title="previous results">&DoubleLeftArrow;</span>
+                    <span id="spanCurrentPage">x/Y</span>
+                    <span id="navNext" class="navigation" title="next results">&DoubleRightArrow;</span>
+                </div>
+            </div>
+            <div id="streamContainer" />
+        </div>
+    </div>
+</body>
+</html>
